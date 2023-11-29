@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5707],{4390:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/Garnet/blog/tags/hola","allTagsPath":"/Garnet/blog/tags","count":1,"unlisted":false}')}}]);
