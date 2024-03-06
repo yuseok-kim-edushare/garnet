@@ -4,7 +4,7 @@
         <title>Garnet Blog</title>
         <link>https://microsoft.github.io/blog</link>
         <description>Garnet Blog</description>
-        <lastBuildDate>Wed, 30 Nov 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 11 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,19 +12,20 @@
             <title><![CDATA[Introducing Garnet]]></title>
             <link>https://microsoft.github.io/blog/intro-to-garnet</link>
             <guid>https://microsoft.github.io/blog/intro-to-garnet</guid>
-            <pubDate>Wed, 30 Nov 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Hi everyone! I just wanted to start this blog with a short history of Garnet and how it]]></description>
-            <content:encoded><![CDATA[<p>Hi everyone! I just wanted to start this blog with a short history of Garnet and how it
+            <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></description>
+            <content:encoded><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it
 came to exist. At Microsoft Research, we have been working on storage technology
-for a while. In 2017, we proposed a new key-value store design based on epoch protection and
-a powerful storage API. This project, called FASTER, was open-sourced in 2018 and gained a
-lot of traction within Microsoft and in the larger community. We build several follow-on
-capabilities such as recoverability (CPR) and serverless support (Netherite), and the
+for a while. In 2016, we started working on a new key-value store design based on epoch protection and
+a powerful storage API. This project, called <a href="https://github.com/microsoft/FASTER" target="_blank" rel="noopener noreferrer">FASTER</a>, was
+open-sourced in 2018 and gained a lot of traction within Microsoft and in the larger community. FASTER
+has over 6k stars and over half a million NuGet downloads. Over the next several years, we built
+follow-on capabilities such as recoverability (CPR) and serverless support (Netherite), and the
 project was widely adopted.</p>
 <p>Around 2021, we noticed a huge interest in remote cache-stores, particularly using APIs
-such as the RESP API of Redis. Developers at Microsoft loved the flexibility of both the
-API and the deployment model as a separate process/service. The cost savings compared to
-accessing cloud databases directly drove the adoption of caching layers, and these soon
+such as the RESP API of Redis. Developers loved the flexibility of both the API and the
+deployment model as a separate process/service. The cost savings compared to accessing
+cloud databases directly drove the adoption of caching layers, and these soon
 grew to take up a significant portion of the operating cost of large services. When the
 pandemic hit and online service usage spiked, there was a strong need for lowering costs
 and improving performance (throughput and latency) for such caching layers.</p>
@@ -45,12 +46,14 @@ and Bitmap as well, and added transactions and extensibility features.</p>
 sharding capability, replication, and key migration for dynamic scale-out. By keeping basic compatibility
 with the Redis API, we were able to add these features in a way that existing client code could
 be largely unchanged.</p>
-<p>After thousands of unit tests and a couple of years working with first-party customers at Microsoft
+<p>After thousands of unit tests and a couple of years working with first-party teams at Microsoft
 deploying Garnet in production (more on this in future blog posts!), we felt it was time to release
-it publicly, just like we did with FASTER 5 years back. We wanted developers across the planet to
+it publicly, just like we did with FASTER five years back. We wanted developers across the planet to
 benefit from this powerful technology and contribute back to the codebase as well. We felt that
 the modern C# codebase would be particularly attractive here, in terms of ease of expansion,
-maintenance, and contribution.</p>]]></content:encoded>
+maintenance, and contribution. So, explore Garnet, see if you can find use for it in your
+applications, consider helping us out with expanding its capabilities, and as always, let us
+know what you think!</p>]]></content:encoded>
             <category>garnet</category>
             <category>introduction</category>
         </item>
