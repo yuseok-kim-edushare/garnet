@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microsoft.github.io/blog</id>
     <title>Garnet Blog</title>
-    <updated>2024-03-11T00:00:00.000Z</updated>
+    <updated>2024-03-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microsoft.github.io/blog"/>
     <subtitle>Garnet Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Introducing Garnet]]></title>
         <id>https://microsoft.github.io/blog/intro-to-garnet</id>
         <link href="https://microsoft.github.io/blog/intro-to-garnet"/>
-        <updated>2024-03-11T00:00:00.000Z</updated>
+        <updated>2024-03-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></summary>
         <content type="html"><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it
 came to exist. At Microsoft Research, we have been working on storage technology
@@ -50,9 +50,10 @@ deploying Garnet in production (more on this in future blog posts!), we felt it 
 it publicly, just like we did with FASTER five years back. We wanted developers across the planet to
 benefit from this powerful technology and contribute back to the codebase as well. We felt that
 the modern C# codebase would be particularly attractive here, in terms of ease of expansion,
-maintenance, and contribution. So, explore Garnet, see if you can find use for it in your
-applications, consider helping us out with expanding its capabilities, and as always, let us
-know what you think!</p>]]></content>
+maintenance, and contribution. Coming from MSR, we also want people in academia to conduct research,
+collaborate with us, and expand various aspects of the system.</p>
+<p>So, explore Garnet, see if you can find use for it in your applications, consider helping us out
+with expanding its capabilities, and as always, let us know what you think!</p>]]></content>
         <author>
             <name>Badrish Chandramouli</name>
             <uri>https://badrish.net</uri>
