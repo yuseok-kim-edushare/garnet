@@ -4,14 +4,26 @@
         <title>Garnet Blog</title>
         <link>https://microsoft.github.io/blog</link>
         <description>Garnet Blog</description>
-        <lastBuildDate>Sun, 17 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Introducing Garnet]]></title>
-            <link>https://microsoft.github.io/blog/intro-to-garnet</link>
-            <guid>https://microsoft.github.io/blog/intro-to-garnet</guid>
+            <title><![CDATA[Open sourcing announcement in the Microsoft Research Blog]]></title>
+            <link>https://microsoft.github.io/blog/msr-blog-announcement</link>
+            <guid>https://microsoft.github.io/blog/msr-blog-announcement</guid>
+            <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Microsoft Research Blog has just published a new post introducing Garnet. Check it out here. Have fun!]]></description>
+            <content:encoded><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content:encoded>
+            <category>garnet</category>
+            <category>oss</category>
+            <category>announcement</category>
+            <category>msr</category>
+        </item>
+        <item>
+            <title><![CDATA[A Brief History of Garnet]]></title>
+            <link>https://microsoft.github.io/blog/brief-history</link>
+            <guid>https://microsoft.github.io/blog/brief-history</guid>
             <pubDate>Sun, 17 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></description>
             <content:encoded><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it
@@ -56,6 +68,7 @@ collaborate with us, and expand various aspects of the system.</p>
 <p>So, explore Garnet, see if you can find use for it in your applications, consider helping us out
 with expanding its capabilities, and as always, let us know what you think!</p>]]></content:encoded>
             <category>garnet</category>
+            <category>history</category>
             <category>introduction</category>
         </item>
     </channel>

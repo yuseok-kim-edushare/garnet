@@ -2,15 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microsoft.github.io/blog</id>
     <title>Garnet Blog</title>
-    <updated>2024-03-17T00:00:00.000Z</updated>
+    <updated>2024-03-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microsoft.github.io/blog"/>
     <subtitle>Garnet Blog</subtitle>
     <icon>https://microsoft.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Introducing Garnet]]></title>
-        <id>https://microsoft.github.io/blog/intro-to-garnet</id>
-        <link href="https://microsoft.github.io/blog/intro-to-garnet"/>
+        <title type="html"><![CDATA[Open sourcing announcement in the Microsoft Research Blog]]></title>
+        <id>https://microsoft.github.io/blog/msr-blog-announcement</id>
+        <link href="https://microsoft.github.io/blog/msr-blog-announcement"/>
+        <updated>2024-03-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Microsoft Research Blog has just published a new post introducing Garnet. Check it out here. Have fun!]]></summary>
+        <content type="html"><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content>
+        <author>
+            <name>Badrish Chandramouli</name>
+            <uri>https://badrish.net</uri>
+        </author>
+        <category label="garnet" term="garnet"/>
+        <category label="oss" term="oss"/>
+        <category label="announcement" term="announcement"/>
+        <category label="msr" term="msr"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Brief History of Garnet]]></title>
+        <id>https://microsoft.github.io/blog/brief-history</id>
+        <link href="https://microsoft.github.io/blog/brief-history"/>
         <updated>2024-03-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></summary>
         <content type="html"><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it
@@ -59,6 +75,7 @@ with expanding its capabilities, and as always, let us know what you think!</p>]
             <uri>https://badrish.net</uri>
         </author>
         <category label="garnet" term="garnet"/>
+        <category label="history" term="history"/>
         <category label="introduction" term="introduction"/>
     </entry>
 </feed>
