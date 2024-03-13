@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.1">
 <title data-rh="true">Welcome to Garnet | Garnet</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://microsoft.github.io/docs"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Welcome to Garnet | Garnet"><meta data-rh="true" name="description" content="Garnet is a new remote cache-store from Microsoft Research, that is designed to be extremely fast, extensible,"><meta data-rh="true" property="og:description" content="Garnet is a new remote cache-store from Microsoft Research, that is designed to be extremely fast, extensible,"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://microsoft.github.io/docs"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/docs" hreflang="en"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/docs" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Garnet RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Garnet Atom Feed"><link rel="stylesheet" href="/assets/css/styles.baf955a9.css">
-<script src="/assets/js/runtime~main.12bcb3fe.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5569e852.js" defer="defer"></script>
 <script src="/assets/js/main.116b4992.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,23 +21,25 @@ in C#. Compared to other open-source cache-stores, you get much better performan
 <p>Note that Garnet is a research project from Microsoft Research, and the project should be treated as such. That said, we are bunch
 of highly passionate researchers and developers working on it full-time at the moment to make it as stable and efficient as we
 can. Our goal is to create a vibrant community around Garnet. In fact, Garnet has been of sufficiently high quality that several
-first-party and platform teams at Microsoft have deployed versions of Garnet in production internally for many months now.</p>
+first-party and platform teams at Microsoft have deployed versions of Garnet internally for many months now.</p>
 <p>Garnet offers the following key advantages:</p>
 <ul>
-<li>Orders-of-magnitude better server throughput (ops/sec) with small batches, as we increase the number of client sessions.</li>
-<li>Lower single operation latency (sub-100 microsecs median latency, and sub-700 microsecs 99th percentile latency on
-commodity cloud (Azure) machines with accelerated TCP enabled, on both Windows and Linux.</li>
+<li>Orders-of-magnitude better server throughput (ops/sec) with small batches and many client sessions, relative to
+comparable open-source cache-stores.</li>
+<li>Extremely low single operation latency (less than 300 microseconds at median and 99.9th percentile) on commodity cloud
+(Azure) machines with accelerated TCP enabled, on both Windows and Linux.</li>
 <li>Better scalability as we increase the number of clients, with or without client-side batching.</li>
 <li>The ability to use all CPU/memory resources of a server machine with a single shared-memory server instance
 (no intra-node cluster needed).</li>
-<li>Database features such as fast checkpointing and recovery, plus reliable pub/sub.</li>
 <li>Support for larger-than-memory datasets, spilling to local and cloud storage devices.</li>
-<li>Support for multi-node static hash partitioning (Redis &quot;cluster&quot; mode), state migration, and replication.</li>
-<li>Well tested with a comprehensive test suite (1000+ unit tests across Garnet and its storage layer Tsavorite).</li>
+<li>Database features such as fast checkpointing and recovery, and publish/subscribe.</li>
+<li>Support for multi-node sharded hash partitioning (Redis &quot;cluster&quot; mode), state migration, and replication.</li>
+<li>Well tested with a comprehensive test suite (thousands of unit tests across Garnet and its storage layer Tsavorite).</li>
 <li>A C# codebase that is easy to evolve and extend.</li>
 </ul>
 <p>If you need a cache-store for your application or service, with lots of practical features, high performance, and a
-modern design based on state-of-the-art Microsoft Research technology, then Garnet is the system for you.</p>
+modern design based on state-of-the-art Microsoft Research technology, then Garnet is the system for you. Check out
+more details on Garnet&#x27;s performance advantages <a href="/docs/benchmarking/overview">here</a>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="api-coverage">API Coverage<a href="#api-coverage" class="hash-link" aria-label="Direct link to API Coverage" title="Direct link to API Coverage">​</a></h2>
 <p>Garnet supports a large (and growing) <a href="/docs/commands/api-compatibility">API surface</a>, including:</p>
 <ul>
