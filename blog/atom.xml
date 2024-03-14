@@ -8,7 +8,7 @@
     <subtitle>Garnet Blog</subtitle>
     <icon>https://microsoft.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Open sourcing announcement in the Microsoft Research Blog]]></title>
+        <title type="html"><![CDATA[OSS Announcement]]></title>
         <id>https://microsoft.github.io/blog/msr-blog-announcement</id>
         <link href="https://microsoft.github.io/blog/msr-blog-announcement"/>
         <updated>2024-03-18T00:00:00.000Z</updated>
