@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://microsoft.github.io/blog</id>
+    <id>https://microsoft.github.io/garnet/blog</id>
     <title>Garnet Blog</title>
     <updated>2024-03-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://microsoft.github.io/blog"/>
+    <link rel="alternate" href="https://microsoft.github.io/garnet/blog"/>
     <subtitle>Garnet Blog</subtitle>
-    <icon>https://microsoft.github.io/img/favicon.ico</icon>
+    <icon>https://microsoft.github.io/garnet/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[OSS Announcement]]></title>
-        <id>https://microsoft.github.io/blog/msr-blog-announcement</id>
-        <link href="https://microsoft.github.io/blog/msr-blog-announcement"/>
+        <id>https://microsoft.github.io/garnet/blog/msr-blog-announcement</id>
+        <link href="https://microsoft.github.io/garnet/blog/msr-blog-announcement"/>
         <updated>2024-03-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The Microsoft Research Blog has just published a new post introducing Garnet. Check it out here. Have fun!]]></summary>
         <content type="html"><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content>
@@ -25,8 +25,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[A Brief History of Garnet]]></title>
-        <id>https://microsoft.github.io/blog/brief-history</id>
-        <link href="https://microsoft.github.io/blog/brief-history"/>
+        <id>https://microsoft.github.io/garnet/blog/brief-history</id>
+        <link href="https://microsoft.github.io/garnet/blog/brief-history"/>
         <updated>2024-03-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></summary>
         <content type="html"><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it

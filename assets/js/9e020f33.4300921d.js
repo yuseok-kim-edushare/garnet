@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2639],{100:s=>{s.exports=JSON.parse('{"label":"oss","permalink":"/garnet/blog/tags/oss","allTagsPath":"/garnet/blog/tags","count":1,"unlisted":false}')}}]);

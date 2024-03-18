@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Garnet Blog</title>
-        <link>https://microsoft.github.io/blog</link>
+        <link>https://microsoft.github.io/garnet/blog</link>
         <description>Garnet Blog</description>
         <lastBuildDate>Mon, 18 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[OSS Announcement]]></title>
-            <link>https://microsoft.github.io/blog/msr-blog-announcement</link>
-            <guid>https://microsoft.github.io/blog/msr-blog-announcement</guid>
+            <link>https://microsoft.github.io/garnet/blog/msr-blog-announcement</link>
+            <guid>https://microsoft.github.io/garnet/blog/msr-blog-announcement</guid>
             <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[The Microsoft Research Blog has just published a new post introducing Garnet. Check it out here. Have fun!]]></description>
             <content:encoded><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content:encoded>
@@ -22,8 +22,8 @@
         </item>
         <item>
             <title><![CDATA[A Brief History of Garnet]]></title>
-            <link>https://microsoft.github.io/blog/brief-history</link>
-            <guid>https://microsoft.github.io/blog/brief-history</guid>
+            <link>https://microsoft.github.io/garnet/blog/brief-history</link>
+            <guid>https://microsoft.github.io/garnet/blog/brief-history</guid>
             <pubDate>Sun, 17 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it]]></description>
             <content:encoded><![CDATA[<p>Hi everyone! I just wanted to start off this blog with a short history of Garnet and how it
