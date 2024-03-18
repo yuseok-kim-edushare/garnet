@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.0.1">
 <title data-rh="true">Onboarding | Garnet</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://microsoft.github.io/docs/dev/onboarding"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Onboarding | Garnet"><meta data-rh="true" name="description" content="Welcome to Garnet! In this page, you will find the main steps to set up your work environment for developing in Garnet."><meta data-rh="true" property="og:description" content="Welcome to Garnet! In this page, you will find the main steps to set up your work environment for developing in Garnet."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://microsoft.github.io/docs/dev/onboarding"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/docs/dev/onboarding" hreflang="en"><link data-rh="true" rel="alternate" href="https://microsoft.github.io/docs/dev/onboarding" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Garnet RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Garnet Atom Feed"><link rel="stylesheet" href="/assets/css/styles.57311880.css">
-<script src="/assets/js/runtime~main.e06defa4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.d4e0468c.js" defer="defer"></script>
 <script src="/assets/js/main.8e8c0e13.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -149,133 +149,8 @@ RESP representation:</p>
 <li>As a good practice, follow the <b>camel case C# naming convention.</b></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="structure-of-the-garnetsln-visual-studio-solution-file">Structure of the Garnet.sln Visual Studio Solution File<a href="#structure-of-the-garnetsln-visual-studio-solution-file" class="hash-link" aria-label="Direct link to Structure of the Garnet.sln Visual Studio Solution File" title="Direct link to Structure of the Garnet.sln Visual Studio Solution File">​</a></h2>
-<p>In the following list, we describe the C# projects in the Garnet VS solution:</p>
 <ul>
-<li><code>libs</code> folder<!-- -->
-<ul>
-<li>Garnet.host<!-- -->
-<ul>
-<li><strong>Description:</strong> The hosting class that instantiates the Garnet server.</li>
-</ul>
-</li>
-<li>Garnet.server<!-- -->
-<ul>
-<li><strong>Description:</strong> All the API for the keys operations, ACL commands, Checkpointing, Metrics, Transactions, Garnet server API, and storage layer implementation with RESP.</li>
-</ul>
-</li>
-<li>Garnet.cluster<!-- -->
-<ul>
-<li><strong>Description:</strong> The Garnet Cluster implementation.</li>
-</ul>
-</li>
-<li>Garnet.client<!-- -->
-<ul>
-<li><strong>Description:</strong> Clients that can be used with Garnet server with limited functionality.</li>
-</ul>
-</li>
-<li>Garnet.common<!-- -->
-<ul>
-<li><strong>Description:</strong> Network layer implementation and common tools used for requests and responses processing.</li>
-</ul>
-</li>
-<li><code>storage/Tsavorite</code> folder<!-- -->
-<ul>
-<li><strong>Description:</strong> Solution, sources, and tests for Tsavorite library.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>main</code> folder<!-- -->
-<ul>
-<li>GarnetServer<!-- -->
-<ul>
-<li><strong>Description:</strong> The main program (entry point) where the Garnet server executable is created using the host.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>test</code> folder<!-- -->
-<ul>
-<li>Garnet.test<!-- -->
-<ul>
-<li><strong>Description:</strong> Project for Garnet server unit tests, including unit tests of RESP commands.</li>
-</ul>
-</li>
-<li>Garnet.test.cluster<!-- -->
-<ul>
-<li><strong>Description:</strong> Project for Cluster unit tests.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>benchmark</code> folder<!-- -->
-<ul>
-<li>Embedded.benchmark<!-- -->
-<ul>
-<li><strong>Description:</strong> A Client/Server benchmark tool to issue RESP commands to Garnet code, while bypassing the network stack. The following are the options available to run it:<!-- -->
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">    --runtime: Run time for the tool in seconds.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --threads: Number of threads (sessions) that will send requests to the embedded RESP Server.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --op-workload: Commands to include in the benchmark by default: PING, DBSIZE, CLIENT, ECHO.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --op-percent: Percentage of load to each of the commands executed.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --seed: Seed to initialize random pecentange of load generation of commands to run.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --logger-level: Level of logging for error messages: LogLevel.Trace, LogLevel.Debug, LogLevel.Warning, LogLevel.Error.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --disable-console-logger: True if logging is off.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    --file-logger: Send the logging to a specific path. </span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-</li>
-</ul>
-</li>
-<li>Resp.benchmark<!-- -->
-<ul>
-<li><strong>Description:</strong> A benchmark tool to issue RESP commands to Garnet Server.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>metrics</code> folder<!-- -->
-<ul>
-<li>HdrHistogram<!-- -->
-<ul>
-<li><strong>Description:</strong> Project for creating High Dynamic Range (HDR) Histograms used for graphs of different server metrics.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>playground</code> folder<!-- -->
-<ul>
-<li>Bitmap<!-- -->
-<ul>
-<li><strong>Description:</strong> A project that exercises different bitmaps operations, using Tsavorite.</li>
-</ul>
-</li>
-<li>GarnetClientStress<!-- -->
-<ul>
-<li><strong>Description:</strong> A project to run stress tests against the GarnetClient library.</li>
-</ul>
-</li>
-<li>GarnetClusterManagement<!-- -->
-<ul>
-<li><strong>Description:</strong> Project used to run different cluster tests.</li>
-</ul>
-</li>
-<li>HyperLogLog<!-- -->
-<ul>
-<li><strong>Description:</strong> Project to do different tests to  Hyperloglog implementation in Garnet.</li>
-</ul>
-</li>
-<li>TstRunner<!-- -->
-<ul>
-<li><strong>Description:</strong> Console application to run keys migration commands.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>samples</code> folder<!-- -->
-<ul>
-<li>GarnetClientSample<!-- -->
-<ul>
-<li><strong>Description:</strong> Example of how to use GarnetClient.</li>
-</ul>
-</li>
-<li>MetricsMonitor<!-- -->
-<ul>
-<li><strong>Description:</strong> Console app to get Latency metrics using StackExchange.Redis.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>Refer to the Code Structure page for details <a href="/docs/dev/code-structure">here</a>.</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="running-the-benchmark-application">Running the benchmark application<a href="#running-the-benchmark-application" class="hash-link" aria-label="Direct link to Running the benchmark application" title="Direct link to Running the benchmark application">​</a></h2>
 <ul>
