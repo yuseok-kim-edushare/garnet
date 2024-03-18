@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"OSS Announcement","permalink":"/blog/msr-blog-announcement","unlisted":false},{"title":"A Brief History of Garnet","permalink":"/blog/brief-history","unlisted":false}]}')}}]);
