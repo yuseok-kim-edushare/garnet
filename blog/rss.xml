@@ -14,7 +14,7 @@
             <guid>https://microsoft.github.io/garnet/blog/msr-blog-announcement</guid>
             <pubDate>Mon, 18 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[The Microsoft Research Blog has just published a new post introducing Garnet. Check it out here. Have fun!]]></description>
-            <content:encoded><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>The Microsoft Research Blog has just published a new post introducing Garnet. Check it out <a href="https://www.microsoft.com/en-us/research/blog/introducing-garnet-an-open-source-next-generation-faster-cache-store-for-accelerating-applications-and-services/" target="_blank" rel="noopener noreferrer">here</a>. Have fun!</p>]]></content:encoded>
             <category>garnet</category>
             <category>oss</category>
             <category>announcement</category>
