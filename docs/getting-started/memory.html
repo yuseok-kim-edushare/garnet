@@ -9,7 +9,7 @@
 
 
 <script>!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/loh6v65ww5",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script><link rel="stylesheet" href="/garnet/assets/css/styles.935cd830.css">
-<script src="/garnet/assets/js/runtime~main.12154906.js" defer="defer"></script>
+<script src="/garnet/assets/js/runtime~main.f1917227.js" defer="defer"></script>
 <script src="/garnet/assets/js/main.207d6539.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -40,7 +40,7 @@ reasoning for this is:</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="log-size">Log Size<a href="#log-size" class="hash-link" aria-label="Direct link to Log Size" title="Direct link to Log Size">​</a></h3>
 <p>The index described above does not hold keys or values. Instead, both keys and values are stored in a separate structure
 called the hybrid log. The memory occupied by the log is configured using <code>MemorySize</code> (<code>-m</code> or <code>--memory</code>).</p>
-<p>Memory is organized as a circular buffer of pages, where each page has size cofigured using <code>PageSize</code> (<code>-page</code>). The page
+<p>Memory is organized as a circular buffer of pages, where each page has size cofigured using <code>PageSize</code> (<code>-p</code> or <code>--page</code>). The page
 size controls the maximum key or value size you can store, as a record needs to fit entirely within a page.</p>
 <p>A record in the Garnet main store consists of:</p>
 <ul>
