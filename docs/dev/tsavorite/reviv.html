@@ -9,7 +9,7 @@
 
 
 <script>!function(t,e,n,c,a,r,s){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(r=e.createElement(c)).async=1,r.src="https://www.clarity.ms/tag/loh6v65ww5",(s=e.getElementsByTagName(c)[0]).parentNode.insertBefore(r,s)}(window,document,"clarity","script")</script><link rel="stylesheet" href="/garnet/assets/css/styles.935cd830.css">
-<script src="/garnet/assets/js/runtime~main.4b492297.js" defer="defer"></script>
+<script src="/garnet/assets/js/runtime~main.da92e0cd.js" defer="defer"></script>
 <script src="/garnet/assets/js/main.a90867ac.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -129,14 +129,12 @@
 <li><code>Delete()</code> is done in the normal way; the Tombstone is set. If the Tombstoned record is at the tail of the tag chain (i.e. is the record in the <code>HashBucketEntry</code>) and the FreeList is enabled, then it will be moved to the FreeList. Otherwise (or if this move fails), it remains in the tag chain.</li>
 <li><code>Upsert()</code> and <code>RMW()</code> will try to revivify a Tombstoned record:<!-- -->
 <ul>
-<li>If doing <code>RecordIsolation</code> concurrency control, we Seal the record so no other thread can access it; they will see the Seal and retry (so will not insert another record while this is going on).</li>
 <li>If the record is large enough, we Reinitialize its Value by:<!-- -->
 <ul>
 <li>Clearing the extra value length and filler and calls <code>DisposeForRevivification</code> as described in <a href="#maintaining-extra-value-length">Maintaining Extra Value Length</a>.</li>
 <li>Removing the Tombstone.</li>
 </ul>
 </li>
-<li>If doing <code>RecordIsolation</code> concurrency control, we Unseal the record.</li>
 </ul>
 </li>
 </ul>
@@ -183,38 +181,7 @@
 <li>Thread1: Follows the <em>former</em> .PreviousAddress and is now on an entirely different tag chain.
 This is <em>only</em> possible for the first record in the tag chain (the tail-most record, in the <code>HashBucketEntry</code>); we do not elide records in the middle of the tag chain.</li>
 </ul>
-<p>The tag chain is stabilized by each of the <code>ConcurrencyControlMode</code>s in the following way:</p>
-<ul>
-<li><code>ConcurrencyControlMode.LockTable</code>: Since the only current LockTable implementation is via the <code>HashBucket</code>s, and locking at the <code>HashBucket</code> level is higher than the tag chain, we get a stable tag chain <em>almost</em> for free. The cost is that the <code>HashBucket</code> must be locked <em>before</em> calling TracebackForKeyMatch.</li>
-<li><code>ConcurrencyControlMode.RecordIsolation</code>: This locks only a record at a time, and only after we have verified it is above the HeadAddress. Because of this, there is no way to prevent the first record from being swapped out while we are traversing it, so we must do a delayed check for validity. This is done in <code>TryMatcheWithRecordIsolationAndReviv</code>:<!-- -->
-<ul>
-<li>If the key matches:<!-- -->
-<ul>
-<li>Try to lock.<!-- -->
-<ul>
-<li>If the record has been put on the FreeList, it has been Sealed, so the lock will fail and we will RETRY_LATER.</li>
-<li>It may have been otherwise invalidated; again, return RETRY_LATER.</li>
-<li>Otherwise, it is a valid record for some key</li>
-</ul>
-</li>
-<li>If the key does not match, the record has been revivified with a different key; Unlock and return RETRY_LATER.</li>
-<li>If we are here, the key matches and we have the record-level lock, so we are successful.</li>
-</ul>
-</li>
-<li>Otherwise (the key did not match), save the record&#x27;s .PreviousAddress.<!-- -->
-<ul>
-<li>If this is &gt;= BeginAddress, then we know the record cannot be elided, and can proceed as normally.</li>
-<li>Otherwise, we obtain the hash bucket entry to see if the record&#x27;s address is still the first one in the chain.<!-- -->
-<ul>
-<li>If not, return RETRY_NOW to restart the operation.</li>
-<li>Otherwise, the saved .PreviousAddress is good, and we can continue as normally.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>For <code>ConcurrencyControlMode.LockTable</code>, because the only current LockTable implementation is via the <code>HashBucket</code>s and locking at the <code>HashBucket</code> level is higher than the tag chain, we get a stable tag chain <em>almost</em> for free. The cost is that the <code>HashBucket</code> must be locked <em>before</em> calling TracebackForKeyMatch.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="freerecordpool-design"><code>FreeRecordPool</code> Design<a href="#freerecordpool-design" class="hash-link" aria-label="Direct link to freerecordpool-design" title="Direct link to freerecordpool-design">​</a></h3>
 <p>The FreeList hierarchy consists of:</p>
 <ul>
