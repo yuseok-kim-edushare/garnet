@@ -37,9 +37,9 @@ namespace Garnet.server
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void RecordValue(int ver)
+        public ulong RecordValue(int ver)
         {
-            if (startTimestamp == 0) return;
+            if (startTimestamp == 0) return 0;
 
             long elapsed = Stopwatch.GetTimestamp() - startTimestamp;
             if (IsValidRange(elapsed))
@@ -47,6 +47,8 @@ namespace Garnet.server
             else
                 latency[ver].RecordValue(HISTOGRAM_UPPER_BOUND);
             startTimestamp = 0;
+
+            return (ulong)elapsed;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

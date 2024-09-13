@@ -118,6 +118,8 @@ namespace Garnet.server
         // Track whether the incoming network batch had some admin command
         bool hasAdminCommand;
 
+        private string BatchCmdName;
+
         readonly CustomCommandManagerSession customCommandManagerSession;
 
         /// <summary>
@@ -371,11 +373,24 @@ namespace Garnet.server
                 {
                     if (hasAdminCommand)
                     {
-                        latencyMetrics.StopAndSwitch(LatencyMetricsType.NET_RS_LAT, LatencyMetricsType.NET_RS_LAT_ADMIN);
+                        var adminLat = latencyMetrics.StopAndSwitch(LatencyMetricsType.NET_RS_LAT, LatencyMetricsType.NET_RS_LAT_ADMIN)/ TimeSpan.TicksPerMicrosecond;
+                        if(adminLat > 500)
+                        {
+
+                            logger.LogCritical($"AdminCommand: {BatchCmdName} and Lat: {adminLat}");
+                        }
                         hasAdminCommand = false;
                     }
                     else
-                        latencyMetrics.Stop(LatencyMetricsType.NET_RS_LAT);
+                    {
+                        var regularLat = latencyMetrics.Stop(LatencyMetricsType.NET_RS_LAT) / TimeSpan.TicksPerMicrosecond;
+                        if (regularLat > 500)
+                        {
+
+                            logger.LogCritical($"RegularCommand: {BatchCmdName} and Lat: {regularLat}");
+                        }
+
+                    }
                     latencyMetrics.RecordValue(LatencyMetricsType.NET_RS_BYTES, readHead);
                     latencyMetrics.RecordValue(LatencyMetricsType.NET_RS_OPS, opCount);
                     opCount = 0;
@@ -403,7 +418,7 @@ namespace Garnet.server
                 // We use endReadHead to track the end of the current command
                 // On success, readHead is left at the start of the command payload for legacy operators
                 var cmd = ParseCommand(out bool commandReceived);
-
+                BatchCmdName = cmd.ToString();
                 // If the command was not fully received, reset addresses and break out
                 if (!commandReceived)
                 {

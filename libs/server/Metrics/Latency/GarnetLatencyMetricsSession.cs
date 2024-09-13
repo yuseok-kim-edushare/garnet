@@ -48,20 +48,20 @@ namespace Garnet.server
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void StopAndSwitch(LatencyMetricsType oldCmd, LatencyMetricsType newCmd)
+        public ulong StopAndSwitch(LatencyMetricsType oldCmd, LatencyMetricsType newCmd)
         {
             int old_idx = (int)oldCmd;
             int new_idx = (int)newCmd;
             metrics[new_idx].startTimestamp = metrics[old_idx].startTimestamp;
             metrics[old_idx].startTimestamp = 0;
-            metrics[new_idx].RecordValue(Version);
+            return metrics[new_idx].RecordValue(Version);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void Stop(LatencyMetricsType cmd)
+        public ulong Stop(LatencyMetricsType cmd)
         {
             int idx = (int)cmd;
-            metrics[idx].RecordValue(Version);
+            return metrics[idx].RecordValue(Version);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

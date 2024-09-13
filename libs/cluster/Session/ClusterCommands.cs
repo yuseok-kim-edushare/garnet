@@ -178,6 +178,8 @@ namespace Garnet.cluster
                 RespCommand.CLUSTER_SLOTSTATE => NetworkClusterSlotState(out invalidParameters),
                 _ => throw new Exception($"Unexpected cluster subcommand: {command}")
             };
+
+            this.sessionMetrics?.incr_total_cluster_commands_processed();
         }
     }
 }
