@@ -374,7 +374,7 @@ namespace Garnet.server
                     if (hasAdminCommand)
                     {
                         var adminLat = latencyMetrics.StopAndSwitch(LatencyMetricsType.NET_RS_LAT, LatencyMetricsType.NET_RS_LAT_ADMIN)/ TimeSpan.TicksPerMicrosecond;
-                        if(adminLat > 500)
+                        if(adminLat > 1000)
                         {
 
                             logger.LogCritical($"AdminCommand: {BatchCmdName} and Lat: {adminLat}");
@@ -384,7 +384,7 @@ namespace Garnet.server
                     else
                     {
                         var regularLat = latencyMetrics.Stop(LatencyMetricsType.NET_RS_LAT) / TimeSpan.TicksPerMicrosecond;
-                        if (regularLat > 500)
+                        if (regularLat > 1000)
                         {
 
                             logger.LogCritical($"RegularCommand: {BatchCmdName} and Lat: {regularLat}");
