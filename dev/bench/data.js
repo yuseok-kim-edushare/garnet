@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728581814328,
+  "lastUpdate": 1728581820457,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -132,6 +132,52 @@ window.BENCHMARK_DATA = {
             "value": 2936.812460218157,
             "unit": "ns",
             "range": "± 25.54512298736592"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "58038d1ea21c0ffa556d4a6f0eff858b0ab21075",
+          "message": "Moved the permissions to full workflow",
+          "timestamp": "2024-10-10T17:32:02Z",
+          "url": "https://github.com/microsoft/garnet/commit/58038d1ea21c0ffa556d4a6f0eff858b0ab21075"
+        },
+        "date": 1728581816618,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 26128.151520792642,
+            "unit": "ns",
+            "range": "± 136.32805778508586"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 23856.368095984824,
+            "unit": "ns",
+            "range": "± 36.71587629680578"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 20045.04243367513,
+            "unit": "ns",
+            "range": "± 120.30898102512135"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 18887.297145589193,
+            "unit": "ns",
+            "range": "± 119.4465450068943"
           }
         ]
       }
