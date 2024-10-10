@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728581893280,
+  "lastUpdate": 1728581900499,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -316,6 +316,52 @@ window.BENCHMARK_DATA = {
             "value": 19279.77975698618,
             "unit": "ns",
             "range": "± 20.86917438490389"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "58038d1ea21c0ffa556d4a6f0eff858b0ab21075",
+          "message": "Moved the permissions to full workflow",
+          "timestamp": "2024-10-10T17:32:02Z",
+          "url": "https://github.com/microsoft/garnet/commit/58038d1ea21c0ffa556d4a6f0eff858b0ab21075"
+        },
+        "date": 1728581876234,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 120.85945288340251,
+            "unit": "ns",
+            "range": "± 0.29487268407800216"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 177.4899196624756,
+            "unit": "ns",
+            "range": "± 0.4130409842355749"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 354.2480659484863,
+            "unit": "ns",
+            "range": "± 0.9206315400946578"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2270.9117071969167,
+            "unit": "ns",
+            "range": "± 5.115750229336117"
           }
         ]
       }
