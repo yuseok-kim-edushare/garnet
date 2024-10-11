@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728669730465,
+  "lastUpdate": 1728669750413,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2014,6 +2014,52 @@ window.BENCHMARK_DATA = {
             "value": 39818.99332369291,
             "unit": "ns",
             "range": "± 167.87782199039344"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d69a07b30fe9500cf7cd13d175f016fd14f4f78b",
+          "message": "Adding actions: write permit since actions default to read only",
+          "timestamp": "2024-10-10T21:28:01Z",
+          "url": "https://github.com/microsoft/garnet/commit/d69a07b30fe9500cf7cd13d175f016fd14f4f78b"
+        },
+        "date": 1728669746577,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 175.39536967277527,
+            "unit": "ns",
+            "range": "± 1.0996635716125784"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 288.75476188659667,
+            "unit": "ns",
+            "range": "± 1.9407954981979887"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 1376.7572649637857,
+            "unit": "ns",
+            "range": "± 9.063763818812363"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 2741.5280350276403,
+            "unit": "ns",
+            "range": "± 16.80485557140606"
           }
         ]
       }
