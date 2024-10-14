@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940097996,
+  "lastUpdate": 1728940108127,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -370,6 +370,54 @@ window.BENCHMARK_DATA = {
             "value": 1691.3782628377278,
             "unit": "ns",
             "range": "± 4.401467504653916"
+          }
+        ]
+      }
+    ],
+    "BDNBenchmark - Cluster.RespClusterBench (os windows-latest, framework net8.0, configuration Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940095538,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 24937.716573079426,
+            "unit": "ns",
+            "range": "± 74.24313101623872"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 23048.917061941964,
+            "unit": "ns",
+            "range": "± 34.16356181822815"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 20224.72403390067,
+            "unit": "ns",
+            "range": "± 34.45890805582854"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 20594.52423095703,
+            "unit": "ns",
+            "range": "± 31.10902801570472"
           }
         ]
       }
