@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940035774,
+  "lastUpdate": 1728940037222,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -136,6 +136,54 @@ window.BENCHMARK_DATA = {
             "value": 18682.342987060547,
             "unit": "ns",
             "range": "± 141.9175795358318"
+          }
+        ]
+      }
+    ],
+    "BDNBenchmark - Cluster.RespClusterMigrateBench (os ubuntu-latest, framework net8.0, configuration Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940031103,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Get",
+            "value": 46896.716779436385,
+            "unit": "ns",
+            "range": "± 439.9357008144219"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Set",
+            "value": 47791.856471470426,
+            "unit": "ns",
+            "range": "± 96.0317356198837"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MGet",
+            "value": 41458.17583759014,
+            "unit": "ns",
+            "range": "± 44.948771269026004"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MSet",
+            "value": 39428.55940598708,
+            "unit": "ns",
+            "range": "± 132.53847448246242"
           }
         ]
       }
