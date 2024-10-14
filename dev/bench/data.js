@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940543182,
+  "lastUpdate": 1728940546755,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -410,6 +410,52 @@ window.BENCHMARK_DATA = {
             "value": 2916.4730339050293,
             "unit": "ns",
             "range": "± 25.617028483657357"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940542809,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 191.86281636783056,
+            "unit": "ns",
+            "range": "± 0.8730702338263638"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 329.1846381823222,
+            "unit": "ns",
+            "range": "± 1.9027569203687162"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 610.9524878819783,
+            "unit": "ns",
+            "range": "± 6.041692803398105"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2930.670192718506,
+            "unit": "ns",
+            "range": "± 16.321519861431003"
           }
         ]
       }
