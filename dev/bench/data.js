@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940499025,
+  "lastUpdate": 1728940519610,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -176,6 +176,52 @@ window.BENCHMARK_DATA = {
             "value": 18682.342987060547,
             "unit": "ns",
             "range": "± 141.9175795358318"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940516387,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 26196.15039716448,
+            "unit": "ns",
+            "range": "± 26.961139820656083"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 24341.644539969308,
+            "unit": "ns",
+            "range": "± 121.2047982285696"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 20283.514506022137,
+            "unit": "ns",
+            "range": "± 21.08483659479205"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 18793.25958486704,
+            "unit": "ns",
+            "range": "± 28.85585852473372"
           }
         ]
       }
