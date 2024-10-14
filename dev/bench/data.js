@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728949672351,
+  "lastUpdate": 1728949676160,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -1036,6 +1036,52 @@ window.BENCHMARK_DATA = {
             "value": 1724.0678787231445,
             "unit": "ns",
             "range": "± 5.502504933670969"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "f8ddb6cefd5c0c6ccc561469c8f6a16bd2c9c055",
+          "message": "A few fixes",
+          "timestamp": "2024-10-14T23:42:25Z",
+          "url": "https://github.com/microsoft/garnet/commit/f8ddb6cefd5c0c6ccc561469c8f6a16bd2c9c055"
+        },
+        "date": 1728949664765,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 104.53683321292584,
+            "unit": "ns",
+            "range": "± 0.2828394592376615"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 175.46481291453043,
+            "unit": "ns",
+            "range": "± 0.8360025452873522"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 748.576291402181,
+            "unit": "ns",
+            "range": "± 2.157681578997776"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 1608.341458638509,
+            "unit": "ns",
+            "range": "± 5.941222537034175"
           }
         ]
       }
