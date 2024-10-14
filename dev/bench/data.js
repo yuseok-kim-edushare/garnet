@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728950292224,
+  "lastUpdate": 1728950324984,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -1672,6 +1672,52 @@ window.BENCHMARK_DATA = {
             "value": 38235.36900111607,
             "unit": "ns",
             "range": "± 52.07256602878018"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "f8ddb6cefd5c0c6ccc561469c8f6a16bd2c9c055",
+          "message": "A few fixes",
+          "timestamp": "2024-10-14T23:42:25Z",
+          "url": "https://github.com/microsoft/garnet/commit/f8ddb6cefd5c0c6ccc561469c8f6a16bd2c9c055"
+        },
+        "date": 1728950305886,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Get",
+            "value": 44451.33850097656,
+            "unit": "ns",
+            "range": "± 94.2681785725043"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Set",
+            "value": 44598.27833909255,
+            "unit": "ns",
+            "range": "± 34.12673003481046"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MGet",
+            "value": 39452.266584123885,
+            "unit": "ns",
+            "range": "± 48.253647745217656"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MSet",
+            "value": 38589.41141764323,
+            "unit": "ns",
+            "range": "± 37.206775783037095"
           }
         ]
       }
