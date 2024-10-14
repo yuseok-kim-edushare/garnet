@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940037222,
+  "lastUpdate": 1728940045126,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -184,6 +184,54 @@ window.BENCHMARK_DATA = {
             "value": 39428.55940598708,
             "unit": "ns",
             "range": "± 132.53847448246242"
+          }
+        ]
+      }
+    ],
+    "BDNBenchmark - Resp.RespLuaRunnerStress (os ubuntu-latest, framework net8.0, configuration Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940041220,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 197.29728430112203,
+            "unit": "ns",
+            "range": "± 0.8281956418359838"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 311.72251698176063,
+            "unit": "ns",
+            "range": "± 2.370557758510817"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 576.3369459152221,
+            "unit": "ns",
+            "range": "± 5.546153379807748"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2916.4730339050293,
+            "unit": "ns",
+            "range": "± 25.617028483657357"
           }
         ]
       }
