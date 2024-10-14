@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1728940045126,
+  "lastUpdate": 1728940091549,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "BDNBenchmark - Resp.RespTsavoriteStress (os ubuntu-latest, framework net8.0, configuration Release)": [
@@ -232,6 +232,48 @@ window.BENCHMARK_DATA = {
             "value": 2916.4730339050293,
             "unit": "ns",
             "range": "± 25.617028483657357"
+          }
+        ]
+      }
+    ],
+    "BDNBenchmark - Resp.RespTsavoriteStress (os windows-latest, framework net8.0, configuration Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "68d0972ccb4255528d1174fb769ee0270d599155",
+          "message": "Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers",
+          "timestamp": "2024-10-14T21:02:46Z",
+          "url": "https://github.com/microsoft/garnet/commit/68d0972ccb4255528d1174fb769ee0270d599155"
+        },
+        "date": 1728940077705,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Get",
+            "value": 20669.430307241586,
+            "unit": "ns",
+            "range": "± 21.642840724081058"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Set",
+            "value": 17960.51068987165,
+            "unit": "ns",
+            "range": "± 26.481607296010033"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Incr",
+            "value": 26155.86130777995,
+            "unit": "ns",
+            "range": "± 147.17609286029804"
           }
         ]
       }
