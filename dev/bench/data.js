@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729109953933,
+  "lastUpdate": 1729109955257,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -362,6 +362,54 @@ window.BENCHMARK_DATA = {
             "value": 2695.601587613424,
             "unit": "ns",
             "range": "± 11.478485553543084"
+          }
+        ]
+      }
+    ],
+    "Cluster.RespClusterMigrateBench (ubuntu-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "400872685cf465e258c8501fdccd937fb805fda5",
+          "message": "Versioning issue with BDN test files, fixed now",
+          "timestamp": "2024-10-16T20:10:45Z",
+          "url": "https://github.com/microsoft/garnet/commit/400872685cf465e258c8501fdccd937fb805fda5"
+        },
+        "date": 1729109953884,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Get",
+            "value": 46671.54217529297,
+            "unit": "ns",
+            "range": "± 219.10074135983268"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Set",
+            "value": 47372.22741699219,
+            "unit": "ns",
+            "range": "± 62.72649692119961"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MGet",
+            "value": 41208.13170917217,
+            "unit": "ns",
+            "range": "± 174.86971227298272"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MSet",
+            "value": 40049.9038273738,
+            "unit": "ns",
+            "range": "± 299.6786980046677"
           }
         ]
       }
