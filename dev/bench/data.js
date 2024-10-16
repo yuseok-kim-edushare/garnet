@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729113560139,
+  "lastUpdate": 1729113562450,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1146,6 +1146,52 @@ window.BENCHMARK_DATA = {
             "value": 2963.157253810338,
             "unit": "ns",
             "range": "± 30.963184750206707"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "00b36746b37dcf422b76be0eb28d509bcbf267f7",
+          "message": "Set to Linux only to reduce number of consectutive tests which caused push collisions with GitHub",
+          "timestamp": "2024-10-16T21:06:52Z",
+          "url": "https://github.com/microsoft/garnet/commit/00b36746b37dcf422b76be0eb28d509bcbf267f7"
+        },
+        "date": 1729113561637,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 204.35223604951585,
+            "unit": "ns",
+            "range": "± 1.112684671650342"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 334.3697848637899,
+            "unit": "ns",
+            "range": "± 2.5147730075513035"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 628.7066197395325,
+            "unit": "ns",
+            "range": "± 3.471352858557018"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2933.8923706641563,
+            "unit": "ns",
+            "range": "± 13.435964176343523"
           }
         ]
       }
