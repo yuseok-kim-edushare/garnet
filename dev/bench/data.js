@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729118161909,
+  "lastUpdate": 1729118163474,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2772,6 +2772,46 @@ window.BENCHMARK_DATA = {
             "value": 28199.14892272949,
             "unit": "ns",
             "range": "± 175.72248386180675"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "23296d620d07bd76f2649bf1b9fc10ebaac777a1",
+          "message": "Set threshhold to 50% (150%) as seeing BDN ran twice on same code sometimes is in 40%+ range of difference.",
+          "timestamp": "2024-10-16T22:32:23Z",
+          "url": "https://github.com/microsoft/garnet/commit/23296d620d07bd76f2649bf1b9fc10ebaac777a1"
+        },
+        "date": 1729118163086,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Get",
+            "value": 20589.742752075195,
+            "unit": "ns",
+            "range": "± 142.514658726064"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Set",
+            "value": 18211.958099365234,
+            "unit": "ns",
+            "range": "± 20.142189355750876"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Incr",
+            "value": 26778.98713684082,
+            "unit": "ns",
+            "range": "± 94.65368633961955"
           }
         ]
       }
