@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729113530515,
+  "lastUpdate": 1729113535383,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -638,6 +638,52 @@ window.BENCHMARK_DATA = {
             "value": 18854.497260538737,
             "unit": "ns",
             "range": "± 220.23377911698054"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "00b36746b37dcf422b76be0eb28d509bcbf267f7",
+          "message": "Set to Linux only to reduce number of consectutive tests which caused push collisions with GitHub",
+          "timestamp": "2024-10-16T21:06:52Z",
+          "url": "https://github.com/microsoft/garnet/commit/00b36746b37dcf422b76be0eb28d509bcbf267f7"
+        },
+        "date": 1729113533032,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 167.30811166763306,
+            "unit": "ns",
+            "range": "± 0.357127902370099"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 279.51507778167723,
+            "unit": "ns",
+            "range": "± 2.788967223362741"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 1374.6368401391167,
+            "unit": "ns",
+            "range": "± 9.365612041222306"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 2745.088722229004,
+            "unit": "ns",
+            "range": "± 16.548720357452563"
           }
         ]
       }
