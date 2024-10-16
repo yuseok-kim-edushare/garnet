@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729112184141,
+  "lastUpdate": 1729112185367,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2386,6 +2386,52 @@ window.BENCHMARK_DATA = {
             "value": 19664.412155151367,
             "unit": "ns",
             "range": "± 161.65661201468555"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "cdf2d25356fad2ca234a01969809b3e4d3aeb5fb",
+          "message": "Bump threshold to 35% (135%) to trigger perf failure",
+          "timestamp": "2024-10-16T20:52:20Z",
+          "url": "https://github.com/microsoft/garnet/commit/cdf2d25356fad2ca234a01969809b3e4d3aeb5fb"
+        },
+        "date": 1729112182169,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 25754.67816380092,
+            "unit": "ns",
+            "range": "± 27.1120195319061"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 24663.58321126302,
+            "unit": "ns",
+            "range": "± 45.45146749764044"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 20289.257694498698,
+            "unit": "ns",
+            "range": "± 161.03346944975192"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 18734.72854868571,
+            "unit": "ns",
+            "range": "± 22.79225894692961"
           }
         ]
       }
