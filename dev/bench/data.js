@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729118200616,
+  "lastUpdate": 1729118202064,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -3182,6 +3182,52 @@ window.BENCHMARK_DATA = {
             "value": 2697.729061671666,
             "unit": "ns",
             "range": "± 28.576624847218547"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "23296d620d07bd76f2649bf1b9fc10ebaac777a1",
+          "message": "Set threshhold to 50% (150%) as seeing BDN ran twice on same code sometimes is in 40%+ range of difference.",
+          "timestamp": "2024-10-16T22:32:23Z",
+          "url": "https://github.com/microsoft/garnet/commit/23296d620d07bd76f2649bf1b9fc10ebaac777a1"
+        },
+        "date": 1729118198499,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 157.68497811953227,
+            "unit": "ns",
+            "range": "± 0.8463366885809506"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 286.68002999623616,
+            "unit": "ns",
+            "range": "± 2.6875338054911433"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 1359.0967712402344,
+            "unit": "ns",
+            "range": "± 8.822460701060697"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 2728.998231615339,
+            "unit": "ns",
+            "range": "± 20.547153293018766"
           }
         ]
       }
