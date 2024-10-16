@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729117119205,
+  "lastUpdate": 1729117139896,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1500,6 +1500,52 @@ window.BENCHMARK_DATA = {
             "value": 28199.14892272949,
             "unit": "ns",
             "range": "± 175.72248386180675"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "28ccbb4548fe59778ece8ff7c6b834b992cd5ddd",
+          "message": "Putting it back to both OS for the tests",
+          "timestamp": "2024-10-16T22:15:26Z",
+          "url": "https://github.com/microsoft/garnet/commit/28ccbb4548fe59778ece8ff7c6b834b992cd5ddd"
+        },
+        "date": 1729117137800,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 170.93413904735021,
+            "unit": "ns",
+            "range": "± 0.489821988490952"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 274.94485073823193,
+            "unit": "ns",
+            "range": "± 1.8266987335185223"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 1335.7533215840658,
+            "unit": "ns",
+            "range": "± 7.856089245908157"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 2697.729061671666,
+            "unit": "ns",
+            "range": "± 28.576624847218547"
           }
         ]
       }
