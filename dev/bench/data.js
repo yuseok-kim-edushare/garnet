@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729110030564,
+  "lastUpdate": 1729110033900,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -774,6 +774,54 @@ window.BENCHMARK_DATA = {
             "value": 1781.003926595052,
             "unit": "ns",
             "range": "± 5.163285182416928"
+          }
+        ]
+      }
+    ],
+    "Cluster.RespClusterBench (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "400872685cf465e258c8501fdccd937fb805fda5",
+          "message": "Versioning issue with BDN test files, fixed now",
+          "timestamp": "2024-10-16T20:10:45Z",
+          "url": "https://github.com/microsoft/garnet/commit/400872685cf465e258c8501fdccd937fb805fda5"
+        },
+        "date": 1729110032460,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 24913.894871303015,
+            "unit": "ns",
+            "range": "± 40.30166287873744"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 22990.7177734375,
+            "unit": "ns",
+            "range": "± 34.45979373552289"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 19797.45880126953,
+            "unit": "ns",
+            "range": "± 48.266064172059366"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 18181.69901529948,
+            "unit": "ns",
+            "range": "± 24.24418568030652"
           }
         ]
       }
