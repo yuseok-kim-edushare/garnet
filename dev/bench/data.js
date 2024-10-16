@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729112182040,
+  "lastUpdate": 1729112184141,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2898,6 +2898,52 @@ window.BENCHMARK_DATA = {
             "value": 2907.2952954610187,
             "unit": "ns",
             "range": "± 30.378344973289686"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "cdf2d25356fad2ca234a01969809b3e4d3aeb5fb",
+          "message": "Bump threshold to 35% (135%) to trigger perf failure",
+          "timestamp": "2024-10-16T20:52:20Z",
+          "url": "https://github.com/microsoft/garnet/commit/cdf2d25356fad2ca234a01969809b3e4d3aeb5fb"
+        },
+        "date": 1729112183691,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 183.08553341229756,
+            "unit": "ns",
+            "range": "± 1.0342110442892138"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 305.10486291249595,
+            "unit": "ns",
+            "range": "± 4.014327875154547"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 628.2453969319662,
+            "unit": "ns",
+            "range": "± 4.022406707925278"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2953.686055755615,
+            "unit": "ns",
+            "range": "± 17.66030707902575"
           }
         ]
       }
