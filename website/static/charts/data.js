@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729274311506,
+  "lastUpdate": 1729274312760,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2440,6 +2440,54 @@ window.BENCHMARK_DATA = {
             "value": 159283.0810546875,
             "unit": "ns",
             "range": "± 198.56209820217913"
+          }
+        ]
+      }
+    ],
+    "Cluster.RespClusterMigrateBench (ubuntu-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d5953a26de9b92b7137652625b32fc245e3ed9ce",
+          "message": "Fix issue with Cluster BDN is not able to access folder so setting to tmp which does have access",
+          "timestamp": "2024-10-18T17:53:51Z",
+          "url": "https://github.com/microsoft/garnet/commit/d5953a26de9b92b7137652625b32fc245e3ed9ce"
+        },
+        "date": 1729274312535,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Get",
+            "value": 46365.05680745443,
+            "unit": "ns",
+            "range": "± 427.11982807237337"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.Set",
+            "value": 49262.21195329939,
+            "unit": "ns",
+            "range": "± 47.66504496614375"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MGet",
+            "value": 40672.570565359936,
+            "unit": "ns",
+            "range": "± 221.71617884361672"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterMigrateBench.MSet",
+            "value": 39935.819795735675,
+            "unit": "ns",
+            "range": "± 259.41685043930136"
           }
         ]
       }
