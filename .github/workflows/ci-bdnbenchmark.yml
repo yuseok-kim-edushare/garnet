@@ -9,7 +9,7 @@ env:
 jobs:
   changes:
     name: Check for changes
-    runs-on: ubuntu-latest # don't need matrix to test where the changes were made in code
+    runs-on: ubuntu-latest # don't need matrix to test where the changes were made in code.
     permissions:
       pull-requests: read
       contents: read
