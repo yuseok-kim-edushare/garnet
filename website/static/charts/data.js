@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729270340625,
+  "lastUpdate": 1729270344756,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -178,6 +178,52 @@ window.BENCHMARK_DATA = {
             "value": 2245.0287882486978,
             "unit": "ns",
             "range": "± 7.697612284822566"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "df16e9c7648a231044813267042dc711b540ca25",
+          "message": "Merge branch 'main' into darrenge/BDNPerf",
+          "timestamp": "2024-10-18T16:46:31Z",
+          "url": "https://github.com/microsoft/garnet/commit/df16e9c7648a231044813267042dc711b540ca25"
+        },
+        "date": 1729270335720,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress1",
+            "value": 107.61173452649798,
+            "unit": "ns",
+            "range": "± 0.43078753360152766"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress2",
+            "value": 174.61136409214564,
+            "unit": "ns",
+            "range": "± 0.6802689439047244"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress3",
+            "value": 714.1447703043619,
+            "unit": "ns",
+            "range": "± 6.729907631277245"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaStress.BasicLuaStress4",
+            "value": 1798.995167868478,
+            "unit": "ns",
+            "range": "± 5.746661361733492"
           }
         ]
       }
