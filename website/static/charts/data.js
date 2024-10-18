@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729271297732,
+  "lastUpdate": 1729271300927,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1612,6 +1612,58 @@ window.BENCHMARK_DATA = {
             "value": 179531.94110576922,
             "unit": "ns",
             "range": "± 228.74563121458797"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "df16e9c7648a231044813267042dc711b540ca25",
+          "message": "Merge branch 'main' into darrenge/BDNPerf",
+          "timestamp": "2024-10-18T16:46:31Z",
+          "url": "https://github.com/microsoft/garnet/commit/df16e9c7648a231044813267042dc711b540ca25"
+        },
+        "date": 1729271299798,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 23915.87088448661,
+            "unit": "ns",
+            "range": "± 20.98895757644831"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 24840.330810546875,
+            "unit": "ns",
+            "range": "± 148.91285476956605"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 19578.24425330529,
+            "unit": "ns",
+            "range": "± 20.470773630140087"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 17771.84121268136,
+            "unit": "ns",
+            "range": "± 12.484245588945248"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.CPBSET",
+            "value": 179411.4222935268,
+            "unit": "ns",
+            "range": "± 312.1058768743054"
           }
         ]
       }
