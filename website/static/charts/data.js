@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729274519220,
+  "lastUpdate": 1729274636863,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1684,6 +1684,106 @@ window.BENCHMARK_DATA = {
             "value": 144772.28084891182,
             "unit": "ns",
             "range": "± 364.5626443051091"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d58bf0d17e760cd279f1e5415d24d0aabb830aa9",
+          "message": "Bumping threshold to 50% (150%) as mean value in RespParseStress can vary into the 40% from run to run.",
+          "timestamp": "2024-10-18T18:03:04Z",
+          "url": "https://github.com/microsoft/garnet/commit/d58bf0d17e760cd279f1e5415d24d0aabb830aa9"
+        },
+        "date": 1729274622047,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.InlinePing",
+            "value": 2417.072321573893,
+            "unit": "ns",
+            "range": "± 4.620455719291451"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Set",
+            "value": 18081.269938151043,
+            "unit": "ns",
+            "range": "± 46.801549706026094"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetEx",
+            "value": 26576.30350748698,
+            "unit": "ns",
+            "range": "± 155.8091643500758"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetNx",
+            "value": 23152.735900878906,
+            "unit": "ns",
+            "range": "± 26.415261811966758"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetXx",
+            "value": 24288.434307391828,
+            "unit": "ns",
+            "range": "± 40.77084491034396"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Get",
+            "value": 13927.457936604818,
+            "unit": "ns",
+            "range": "± 39.80567678002503"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Increment",
+            "value": 26963.71852329799,
+            "unit": "ns",
+            "range": "± 42.786090273412285"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.ZAddRem",
+            "value": 156202.08270733172,
+            "unit": "ns",
+            "range": "± 219.27632396358487"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.LPushPop",
+            "value": 122966.37834821429,
+            "unit": "ns",
+            "range": "± 357.567487543883"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SAddRem",
+            "value": 122551.10386439732,
+            "unit": "ns",
+            "range": "± 232.37342318174785"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.HSetDel",
+            "value": 160625.2294921875,
+            "unit": "ns",
+            "range": "± 553.9964714107604"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.MyDictSetGet",
+            "value": 257428.87369791666,
+            "unit": "ns",
+            "range": "± 630.6554794093129"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.CustomProceSetBench",
+            "value": 161633.11861478366,
+            "unit": "ns",
+            "range": "± 269.3393556048094"
           }
         ]
       }
