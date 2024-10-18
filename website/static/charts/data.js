@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729270349317,
+  "lastUpdate": 1729270351618,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -498,6 +498,48 @@ window.BENCHMARK_DATA = {
             "value": 1798.995167868478,
             "unit": "ns",
             "range": "± 5.746661361733492"
+          }
+        ]
+      }
+    ],
+    "Resp.RespTsavoriteStress (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "df16e9c7648a231044813267042dc711b540ca25",
+          "message": "Merge branch 'main' into darrenge/BDNPerf",
+          "timestamp": "2024-10-18T16:46:31Z",
+          "url": "https://github.com/microsoft/garnet/commit/df16e9c7648a231044813267042dc711b540ca25"
+        },
+        "date": 1729270348464,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Get",
+            "value": 19993.248857770646,
+            "unit": "ns",
+            "range": "± 58.42175304319213"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Set",
+            "value": 18198.422006460336,
+            "unit": "ns",
+            "range": "± 24.009369768901003"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Incr",
+            "value": 26553.861781529016,
+            "unit": "ns",
+            "range": "± 43.040658457765815"
           }
         ]
       }
