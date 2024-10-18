@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729271477550,
+  "lastUpdate": 1729274299868,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1124,6 +1124,46 @@ window.BENCHMARK_DATA = {
             "value": 159283.0810546875,
             "unit": "ns",
             "range": "± 198.56209820217913"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d5953a26de9b92b7137652625b32fc245e3ed9ce",
+          "message": "Fix issue with Cluster BDN is not able to access folder so setting to tmp which does have access",
+          "timestamp": "2024-10-18T17:53:51Z",
+          "url": "https://github.com/microsoft/garnet/commit/d5953a26de9b92b7137652625b32fc245e3ed9ce"
+        },
+        "date": 1729274298514,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Get",
+            "value": 21499.32565612793,
+            "unit": "ns",
+            "range": "± 196.29027535212197"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Set",
+            "value": 20017.65479024251,
+            "unit": "ns",
+            "range": "± 160.27427927906848"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespTsavoriteStress.Incr",
+            "value": 29351.484422956193,
+            "unit": "ns",
+            "range": "± 125.05026328087776"
           }
         ]
       }
