@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729274422199,
+  "lastUpdate": 1729274425024,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2634,6 +2634,58 @@ window.BENCHMARK_DATA = {
             "value": 179411.4222935268,
             "unit": "ns",
             "range": "± 312.1058768743054"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d5953a26de9b92b7137652625b32fc245e3ed9ce",
+          "message": "Fix issue with Cluster BDN is not able to access folder so setting to tmp which does have access",
+          "timestamp": "2024-10-18T17:53:51Z",
+          "url": "https://github.com/microsoft/garnet/commit/d5953a26de9b92b7137652625b32fc245e3ed9ce"
+        },
+        "date": 1729274423891,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 24308.02741417518,
+            "unit": "ns",
+            "range": "± 30.132697768519254"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 23255.696759905135,
+            "unit": "ns",
+            "range": "± 37.75597743039619"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 19294.17681012835,
+            "unit": "ns",
+            "range": "± 32.01900085719288"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 19398.697117396765,
+            "unit": "ns",
+            "range": "± 25.753934315438656"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.CPBSET",
+            "value": 171408.96841195913,
+            "unit": "ns",
+            "range": "± 180.36413280068942"
           }
         ]
       }
