@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729271358818,
+  "lastUpdate": 1729271474114,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1024,6 +1024,106 @@ window.BENCHMARK_DATA = {
             "value": 143020.83259277343,
             "unit": "ns",
             "range": "± 1189.9488015637062"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "df16e9c7648a231044813267042dc711b540ca25",
+          "message": "Merge branch 'main' into darrenge/BDNPerf",
+          "timestamp": "2024-10-18T16:46:31Z",
+          "url": "https://github.com/microsoft/garnet/commit/df16e9c7648a231044813267042dc711b540ca25"
+        },
+        "date": 1729271465109,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.InlinePing",
+            "value": 2417.8131648472377,
+            "unit": "ns",
+            "range": "± 3.6033626203970344"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Set",
+            "value": 18820.71990966797,
+            "unit": "ns",
+            "range": "± 24.256147651547355"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetEx",
+            "value": 24748.312276204426,
+            "unit": "ns",
+            "range": "± 35.54248340782745"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetNx",
+            "value": 23263.334437779016,
+            "unit": "ns",
+            "range": "± 22.55768247607256"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetXx",
+            "value": 23953.751322428387,
+            "unit": "ns",
+            "range": "± 48.498144707041845"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Get",
+            "value": 14046.66726248605,
+            "unit": "ns",
+            "range": "± 22.892089133818995"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Increment",
+            "value": 25709.1316810021,
+            "unit": "ns",
+            "range": "± 47.23228751706237"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.ZAddRem",
+            "value": 150303.47005208334,
+            "unit": "ns",
+            "range": "± 930.769694621508"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.LPushPop",
+            "value": 124160.23356119792,
+            "unit": "ns",
+            "range": "± 250.16200686006601"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SAddRem",
+            "value": 138720.59849330358,
+            "unit": "ns",
+            "range": "± 355.8275713375209"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.HSetDel",
+            "value": 151482.28678385416,
+            "unit": "ns",
+            "range": "± 646.0144870013581"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.MyDictSetGet",
+            "value": 254493.3203125,
+            "unit": "ns",
+            "range": "± 1100.9952704463046"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.CustomProceSetBench",
+            "value": 159283.0810546875,
+            "unit": "ns",
+            "range": "± 198.56209820217913"
           }
         ]
       }
