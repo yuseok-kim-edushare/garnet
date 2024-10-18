@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729274425024,
+  "lastUpdate": 1729274519220,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1584,6 +1584,106 @@ window.BENCHMARK_DATA = {
             "value": 171408.96841195913,
             "unit": "ns",
             "range": "± 180.36413280068942"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d5953a26de9b92b7137652625b32fc245e3ed9ce",
+          "message": "Fix issue with Cluster BDN is not able to access folder so setting to tmp which does have access",
+          "timestamp": "2024-10-18T17:53:51Z",
+          "url": "https://github.com/microsoft/garnet/commit/d5953a26de9b92b7137652625b32fc245e3ed9ce"
+        },
+        "date": 1729274517928,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.InlinePing",
+            "value": 2287.2456271831807,
+            "unit": "ns",
+            "range": "± 7.114617638774306"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Set",
+            "value": 18972.057302621695,
+            "unit": "ns",
+            "range": "± 32.77608840228135"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetEx",
+            "value": 26311.661943562827,
+            "unit": "ns",
+            "range": "± 157.00195730358325"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetNx",
+            "value": 24430.56366780599,
+            "unit": "ns",
+            "range": "± 155.73242648931003"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SetXx",
+            "value": 25111.754178873696,
+            "unit": "ns",
+            "range": "± 174.53189423785196"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Get",
+            "value": 13960.070668734037,
+            "unit": "ns",
+            "range": "± 5.273892534603458"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.Increment",
+            "value": 29642.214826456704,
+            "unit": "ns",
+            "range": "± 166.1373498934603"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.ZAddRem",
+            "value": 187473.4516319862,
+            "unit": "ns",
+            "range": "± 348.6502853448692"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.LPushPop",
+            "value": 177129.1625453404,
+            "unit": "ns",
+            "range": "± 988.3849080439518"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.SAddRem",
+            "value": 158568.45435509316,
+            "unit": "ns",
+            "range": "± 259.30379810179795"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.HSetDel",
+            "value": 196200.94497070313,
+            "unit": "ns",
+            "range": "± 1443.0833095025605"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.MyDictSetGet",
+            "value": 250156.11155348556,
+            "unit": "ns",
+            "range": "± 841.6025376963192"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespParseStress.CustomProceSetBench",
+            "value": 144772.28084891182,
+            "unit": "ns",
+            "range": "± 364.5626443051091"
           }
         ]
       }
