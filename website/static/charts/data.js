@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729275043086,
+  "lastUpdate": 1729275046115,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -3656,6 +3656,58 @@ window.BENCHMARK_DATA = {
             "value": 171408.96841195913,
             "unit": "ns",
             "range": "± 180.36413280068942"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d58bf0d17e760cd279f1e5415d24d0aabb830aa9",
+          "message": "Bumping threshold to 50% (150%) as mean value in RespParseStress can vary into the 40% from run to run.",
+          "timestamp": "2024-10-18T18:03:04Z",
+          "url": "https://github.com/microsoft/garnet/commit/d58bf0d17e760cd279f1e5415d24d0aabb830aa9"
+        },
+        "date": 1729275044920,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Get",
+            "value": 24725.787789481026,
+            "unit": "ns",
+            "range": "± 50.5698448918745"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.Set",
+            "value": 23425.32501220703,
+            "unit": "ns",
+            "range": "± 33.85853403757127"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MGet",
+            "value": 19281.985825758715,
+            "unit": "ns",
+            "range": "± 41.131601090464116"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.MSet",
+            "value": 18804.507853190105,
+            "unit": "ns",
+            "range": "± 30.049137332496095"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.RespClusterBench.CPBSET",
+            "value": 185441.33676382212,
+            "unit": "ns",
+            "range": "± 106.68846047093015"
           }
         ]
       }
