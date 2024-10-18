@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729274939436,
+  "lastUpdate": 1729274942773,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2820,6 +2820,52 @@ window.BENCHMARK_DATA = {
             "value": 2211.1850466047013,
             "unit": "ns",
             "range": "± 5.972756194209891"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "d58bf0d17e760cd279f1e5415d24d0aabb830aa9",
+          "message": "Bumping threshold to 50% (150%) as mean value in RespParseStress can vary into the 40% from run to run.",
+          "timestamp": "2024-10-18T18:03:04Z",
+          "url": "https://github.com/microsoft/garnet/commit/d58bf0d17e760cd279f1e5415d24d0aabb830aa9"
+        },
+        "date": 1729274938546,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner1",
+            "value": 122.82344102859497,
+            "unit": "ns",
+            "range": "± 0.5126218411293499"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner2",
+            "value": 184.05571619669595,
+            "unit": "ns",
+            "range": "± 0.5842714184804663"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner3",
+            "value": 337.4720827738444,
+            "unit": "ns",
+            "range": "± 1.0277536488844734"
+          },
+          {
+            "name": "BDN.benchmark.Resp.RespLuaRunnerStress.BasicLuaRunner4",
+            "value": 2247.7528708321706,
+            "unit": "ns",
+            "range": "± 4.364231658292368"
           }
         ]
       }
