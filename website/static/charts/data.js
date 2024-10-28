@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730149925763,
+  "lastUpdate": 1730149929701,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5122,6 +5122,48 @@ window.BENCHMARK_DATA = {
             "value": 2982.0884961446127,
             "unit": "ns",
             "range": "± 17.751175646871385"
+          }
+        ]
+      }
+    ],
+    "Operations.BasicOperations (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "f9a963b22f8b4f864967375055b603ba01701229",
+          "message": "Updated BDN test infrastructure to match the new BDN org.",
+          "timestamp": "2024-10-28T21:07:18Z",
+          "url": "https://github.com/microsoft/garnet/commit/f9a963b22f8b4f864967375055b603ba01701229"
+        },
+        "date": 1730149928087,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1802.7672180762659,
+            "unit": "ns",
+            "range": "± 3.6942809559017893"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1861.7925098964147,
+            "unit": "ns",
+            "range": "± 2.5907690309462534"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1769.067808787028,
+            "unit": "ns",
+            "range": "± 2.818599081271463"
           }
         ]
       }
