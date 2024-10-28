@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730151694934,
+  "lastUpdate": 1730151698741,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -658,6 +658,54 @@ window.BENCHMARK_DATA = {
             "value": 1767.7214842576248,
             "unit": "ns",
             "range": "± 2.716444983750785"
+          }
+        ]
+      }
+    ],
+    "Cluster.ClusterMigrate (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "665bda1ae92aaff071c7d8c05bb2edd11b23c0a7",
+          "message": "Fix bug in ObjectOperations",
+          "timestamp": "2024-10-28T21:22:42Z",
+          "url": "https://github.com/microsoft/garnet/commit/665bda1ae92aaff071c7d8c05bb2edd11b23c0a7"
+        },
+        "date": 1730151697117,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 35317.9452078683,
+            "unit": "ns",
+            "range": "± 114.21245812440867"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 36981.62818321815,
+            "unit": "ns",
+            "range": "± 40.33183702135653"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31271.452918419473,
+            "unit": "ns",
+            "range": "± 40.91592917492854"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30701.874287923176,
+            "unit": "ns",
+            "range": "± 85.55372995676868"
           }
         ]
       }
