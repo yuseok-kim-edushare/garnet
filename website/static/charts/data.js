@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730157399929,
+  "lastUpdate": 1730157406173,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1318,6 +1318,52 @@ window.BENCHMARK_DATA = {
             "value": 1615.1737997690836,
             "unit": "ns",
             "range": "± 9.638841630313461"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "0d1fd6fdb128f4892ef3bcc20ea725d764d17748",
+          "message": "Set max items on chart to 50 ... can modify later if want",
+          "timestamp": "2024-10-28T23:12:56Z",
+          "url": "https://github.com/microsoft/garnet/commit/0d1fd6fdb128f4892ef3bcc20ea725d764d17748"
+        },
+        "date": 1730157404898,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 192.2871503489358,
+            "unit": "ns",
+            "range": "± 0.9982897980725655"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 304.18069346745807,
+            "unit": "ns",
+            "range": "± 2.730479341695473"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 602.7832260813032,
+            "unit": "ns",
+            "range": "± 3.477139242063796"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2948.922838083903,
+            "unit": "ns",
+            "range": "± 33.59741629846717"
           }
         ]
       }
