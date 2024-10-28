@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730149880102,
+  "lastUpdate": 1730149882266,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -4940,6 +4940,54 @@ window.BENCHMARK_DATA = {
             "value": 1621.119869105021,
             "unit": "ns",
             "range": "± 11.578140616744163"
+          }
+        ]
+      }
+    ],
+    "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "f9a963b22f8b4f864967375055b603ba01701229",
+          "message": "Updated BDN test infrastructure to match the new BDN org.",
+          "timestamp": "2024-10-28T21:07:18Z",
+          "url": "https://github.com/microsoft/garnet/commit/f9a963b22f8b4f864967375055b603ba01701229"
+        },
+        "date": 1730149881530,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 35930.101407877606,
+            "unit": "ns",
+            "range": "± 254.7252283289507"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 40094.41639200846,
+            "unit": "ns",
+            "range": "± 51.21831727915818"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31868.5171101888,
+            "unit": "ns",
+            "range": "± 259.35891417365355"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30641.38075038365,
+            "unit": "ns",
+            "range": "± 18.625439190914882"
           }
         ]
       }
