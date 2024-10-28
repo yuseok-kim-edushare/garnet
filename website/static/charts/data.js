@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730151680848,
+  "lastUpdate": 1730151683544,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -522,6 +522,54 @@ window.BENCHMARK_DATA = {
             "value": 126265.79939778645,
             "unit": "ns",
             "range": "± 1256.861746487877"
+          }
+        ]
+      }
+    ],
+    "Lua.LuaScripts (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "665bda1ae92aaff071c7d8c05bb2edd11b23c0a7",
+          "message": "Fix bug in ObjectOperations",
+          "timestamp": "2024-10-28T21:22:42Z",
+          "url": "https://github.com/microsoft/garnet/commit/665bda1ae92aaff071c7d8c05bb2edd11b23c0a7"
+        },
+        "date": 1730151680352,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 118.01280425145076,
+            "unit": "ns",
+            "range": "± 0.3251866772496394"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 198.01285107930502,
+            "unit": "ns",
+            "range": "± 0.44714526342665506"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 402.0662720998128,
+            "unit": "ns",
+            "range": "± 1.076547993976425"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2219.820213317871,
+            "unit": "ns",
+            "range": "± 10.57647531073258"
           }
         ]
       }
