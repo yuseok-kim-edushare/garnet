@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730157374030,
+  "lastUpdate": 1730157398083,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1278,6 +1278,46 @@ window.BENCHMARK_DATA = {
             "value": 31492.471421305338,
             "unit": "ns",
             "range": "± 205.78377331255206"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "0d1fd6fdb128f4892ef3bcc20ea725d764d17748",
+          "message": "Set max items on chart to 50 ... can modify later if want",
+          "timestamp": "2024-10-28T23:12:56Z",
+          "url": "https://github.com/microsoft/garnet/commit/0d1fd6fdb128f4892ef3bcc20ea725d764d17748"
+        },
+        "date": 1730157396523,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1769.6418529510497,
+            "unit": "ns",
+            "range": "± 8.981366035648168"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1772.1598709106445,
+            "unit": "ns",
+            "range": "± 9.738588799881311"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1615.1737997690836,
+            "unit": "ns",
+            "range": "± 9.638841630313461"
           }
         ]
       }
