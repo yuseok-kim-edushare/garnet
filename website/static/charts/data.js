@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730153160338,
+  "lastUpdate": 1730157372704,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1232,6 +1232,52 @@ window.BENCHMARK_DATA = {
             "value": 120981.1044546274,
             "unit": "ns",
             "range": "± 552.3241184038421"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "0d1fd6fdb128f4892ef3bcc20ea725d764d17748",
+          "message": "Set max items on chart to 50 ... can modify later if want",
+          "timestamp": "2024-10-28T23:12:56Z",
+          "url": "https://github.com/microsoft/garnet/commit/0d1fd6fdb128f4892ef3bcc20ea725d764d17748"
+        },
+        "date": 1730157371340,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36325.402705601286,
+            "unit": "ns",
+            "range": "± 341.97350820005846"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 38161.211588541664,
+            "unit": "ns",
+            "range": "± 167.01939066521862"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 32008.05619225135,
+            "unit": "ns",
+            "range": "± 227.97047942953975"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31492.471421305338,
+            "unit": "ns",
+            "range": "± 205.78377331255206"
           }
         ]
       }
