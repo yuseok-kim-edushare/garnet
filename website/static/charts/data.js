@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730234146108,
+  "lastUpdate": 1730234153312,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2504,6 +2504,52 @@ window.BENCHMARK_DATA = {
             "value": 1618.0809328715006,
             "unit": "ns",
             "range": "± 9.981738651453574"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "3871a3f846d3311622f0517098062fc9ff6f670e",
+          "message": "Fixed the default case when no parameters sent to ps1",
+          "timestamp": "2024-10-29T20:32:16Z",
+          "url": "https://github.com/microsoft/garnet/commit/3871a3f846d3311622f0517098062fc9ff6f670e"
+        },
+        "date": 1730234151975,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36448.62166137695,
+            "unit": "ns",
+            "range": "± 217.15241359687934"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 37263.48988694411,
+            "unit": "ns",
+            "range": "± 145.13266728218807"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 32957.40852355957,
+            "unit": "ns",
+            "range": "± 20.858839252368696"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31075.694025675457,
+            "unit": "ns",
+            "range": "± 11.085236541191618"
           }
         ]
       }
