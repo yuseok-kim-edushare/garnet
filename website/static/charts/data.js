@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730233515480,
+  "lastUpdate": 1730233519852,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -1894,6 +1894,46 @@ window.BENCHMARK_DATA = {
             "value": 31156.1551361084,
             "unit": "ns",
             "range": "± 19.030130427504545"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "6725d994941b0013ea1e58da7f78e4296ef1217a",
+          "message": "Added the run on push to main",
+          "timestamp": "2024-10-29T20:21:29Z",
+          "url": "https://github.com/microsoft/garnet/commit/6725d994941b0013ea1e58da7f78e4296ef1217a"
+        },
+        "date": 1730233518475,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1748.1270946502686,
+            "unit": "ns",
+            "range": "± 16.999232282301136"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1765.7140935751108,
+            "unit": "ns",
+            "range": "± 4.62551701092959"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1622.131241607666,
+            "unit": "ns",
+            "range": "± 16.02177198285648"
           }
         ]
       }
