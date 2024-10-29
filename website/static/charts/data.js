@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730233890268,
+  "lastUpdate": 1730234144743,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -2464,6 +2464,46 @@ window.BENCHMARK_DATA = {
             "value": 123697.28306361607,
             "unit": "ns",
             "range": "± 485.96675709986675"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "3871a3f846d3311622f0517098062fc9ff6f670e",
+          "message": "Fixed the default case when no parameters sent to ps1",
+          "timestamp": "2024-10-29T20:32:16Z",
+          "url": "https://github.com/microsoft/garnet/commit/3871a3f846d3311622f0517098062fc9ff6f670e"
+        },
+        "date": 1730234143428,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1743.5295426686605,
+            "unit": "ns",
+            "range": "± 12.049510458759883"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1779.6134255727131,
+            "unit": "ns",
+            "range": "± 14.103398397800499"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1618.0809328715006,
+            "unit": "ns",
+            "range": "± 9.981738651453574"
           }
         ]
       }
