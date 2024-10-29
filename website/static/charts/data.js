@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730234161251,
+  "lastUpdate": 1730234162866,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -3216,6 +3216,52 @@ window.BENCHMARK_DATA = {
             "value": 2988.256963602702,
             "unit": "ns",
             "range": "± 16.592788346795835"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "3871a3f846d3311622f0517098062fc9ff6f670e",
+          "message": "Fixed the default case when no parameters sent to ps1",
+          "timestamp": "2024-10-29T20:32:16Z",
+          "url": "https://github.com/microsoft/garnet/commit/3871a3f846d3311622f0517098062fc9ff6f670e"
+        },
+        "date": 1730234162604,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 200.80967585245767,
+            "unit": "ns",
+            "range": "± 0.34353250379020156"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 317.42586447397866,
+            "unit": "ns",
+            "range": "± 1.5574211971937566"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 650.4839994566781,
+            "unit": "ns",
+            "range": "± 6.797879558638191"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2910.1249231974284,
+            "unit": "ns",
+            "range": "± 22.997405533845082"
           }
         ]
       }
