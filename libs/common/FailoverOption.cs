@@ -4,12 +4,14 @@
 using System;
 using System.Linq;
 using System.Text;
+using Garnet.common.Parsing;
 
 namespace Garnet.common
 {
     /// <summary>
     /// Failover option flags
     /// </summary>
+    [GenerateEnumParser]
     public enum FailoverOption : byte
     {
         /// <summary>

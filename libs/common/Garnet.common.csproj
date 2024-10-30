@@ -5,6 +5,7 @@
     <AssemblyOriginatorKeyFile>../../Garnet.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\codegen\Garnet.codegen.csproj" OutputItemType="Analyzer" />
     <ProjectReference Include="..\storage\Tsavorite\cs\src\core\Tsavorite.core.csproj" />
     <ProjectReference Include="..\storage\Tsavorite\cs\src\devices\AzureStorageDevice\Tsavorite.devices.AzureStorageDevice.csproj" />
   </ItemGroup>
