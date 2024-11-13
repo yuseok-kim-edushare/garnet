@@ -8,6 +8,7 @@ namespace Garnet.server
     /// <summary>
     /// Type option for CLIENT|LIST and CLIENT|KILL commands.
     /// </summary>
+    [GenerateEnumParserAttribute]
     public enum ClientType : byte
     {
         /// <summary>
@@ -50,7 +51,8 @@ namespace Garnet.server
         /// </summary>
         public static bool IsValid(this ClientType type, ref ArgSlice fromSlice)
         {
-            return type != ClientType.Invalid && Enum.IsDefined(type) && !fromSlice.ReadOnlySpan.ContainsAnyInRange((byte)'0', (byte)'9');
+            return type != ClientType.Invalid && Enum.IsDefined(type) &&
+                   !fromSlice.ReadOnlySpan.ContainsAnyInRange((byte)'0', (byte)'9');
         }
     }
 }
