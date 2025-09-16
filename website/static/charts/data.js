@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758022035685,
+  "lastUpdate": 1758022142923,
   "repoUrl": "https://github.com/yuseok-kim-edushare/garnet",
   "entries": {
     "Benchmark": [
@@ -8198,6 +8198,92 @@ window.BENCHMARK_DATA = {
             "value": 29983.352300008137,
             "unit": "ns",
             "range": "± 16.6659378572407"
+          }
+        ]
+      }
+    ],
+    "Cluster.ClusterOperations (windows-latest  net9.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "22998716+KiKoS0@users.noreply.github.com",
+            "name": "Riadh",
+            "username": "KiKoS0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "294e46b3b353251115bbbc824dda8ef6db878c96",
+          "message": "Fix ZCOUNT error when min bound is higher than set's max score (#1375)\n\nCo-authored-by: Tal Zaccai <talzacc@microsoft.com>",
+          "timestamp": "2025-09-09T22:02:08-07:00",
+          "tree_id": "acccb0ffddd1731ba00eea768ed530747161b875",
+          "url": "https://github.com/yuseok-kim-edushare/garnet/commit/294e46b3b353251115bbbc824dda8ef6db878c96"
+        },
+        "date": 1758022135083,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 17196.68731689453,
+            "unit": "ns",
+            "range": "± 12.78290437641177"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 14019.477844238281,
+            "unit": "ns",
+            "range": "± 14.934338074436836"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14530.640029907227,
+            "unit": "ns",
+            "range": "± 12.998718553586896"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 12705.60417175293,
+            "unit": "ns",
+            "range": "± 37.02486530060679"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 115524.23793247768,
+            "unit": "ns",
+            "range": "± 119.8717220055002"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 19295.703778948104,
+            "unit": "ns",
+            "range": "± 17.71155890320614"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 17306.170654296875,
+            "unit": "ns",
+            "range": "± 104.66020263253093"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 15620.0438279372,
+            "unit": "ns",
+            "range": "± 13.032439559659048"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 13506.325276692709,
+            "unit": "ns",
+            "range": "± 8.576470904369204"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 112064.79867788461,
+            "unit": "ns",
+            "range": "± 223.82924179947022"
           }
         ]
       }
