@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758020771263,
+  "lastUpdate": 1758020841560,
   "repoUrl": "https://github.com/yuseok-kim-edushare/garnet",
   "entries": {
     "Benchmark": [
@@ -6386,6 +6386,92 @@ window.BENCHMARK_DATA = {
             "value": 26200.837363106864,
             "unit": "ns",
             "range": "± 50.605704704484346"
+          }
+        ]
+      }
+    ],
+    "Network.RawStringOperations (ubuntu-latest  net9.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "22998716+KiKoS0@users.noreply.github.com",
+            "name": "Riadh",
+            "username": "KiKoS0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "294e46b3b353251115bbbc824dda8ef6db878c96",
+          "message": "Fix ZCOUNT error when min bound is higher than set's max score (#1375)\n\nCo-authored-by: Tal Zaccai <talzacc@microsoft.com>",
+          "timestamp": "2025-09-09T22:02:08-07:00",
+          "tree_id": "acccb0ffddd1731ba00eea768ed530747161b875",
+          "url": "https://github.com/yuseok-kim-edushare/garnet/commit/294e46b3b353251115bbbc824dda8ef6db878c96"
+        },
+        "date": 1758020839674,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.Set(Params: None)",
+            "value": 243.78941800044134,
+            "unit": "ns",
+            "range": "± 0.621083882336374"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.SetEx(Params: None)",
+            "value": 275.8209441258357,
+            "unit": "ns",
+            "range": "± 0.2456719044747818"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.SetNx(Params: None)",
+            "value": 296.5763363838196,
+            "unit": "ns",
+            "range": "± 0.4574532611166854"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.SetXx(Params: None)",
+            "value": 297.4909851734455,
+            "unit": "ns",
+            "range": "± 0.44481723311417565"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.GetFound(Params: None)",
+            "value": 231.4420156112084,
+            "unit": "ns",
+            "range": "± 0.39014219789223376"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.GetNotFound(Params: None)",
+            "value": 169.97539470876967,
+            "unit": "ns",
+            "range": "± 0.16857080948727213"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.Increment(Params: None)",
+            "value": 310.97408403669084,
+            "unit": "ns",
+            "range": "± 0.7254437963587462"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.Decrement(Params: None)",
+            "value": 313.0279984474182,
+            "unit": "ns",
+            "range": "± 1.3665190514749348"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.IncrementBy(Params: None)",
+            "value": 366.31696631113687,
+            "unit": "ns",
+            "range": "± 4.15115399382123"
+          },
+          {
+            "name": "BDN.benchmark.Network.RawStringOperations.DecrementBy(Params: None)",
+            "value": 361.9549761552077,
+            "unit": "ns",
+            "range": "± 0.7763877473977867"
           }
         ]
       }
