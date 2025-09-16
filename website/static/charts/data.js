@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758022399703,
+  "lastUpdate": 1758022721452,
   "repoUrl": "https://github.com/yuseok-kim-edushare/garnet",
   "entries": {
     "Benchmark": [
@@ -8516,6 +8516,104 @@ window.BENCHMARK_DATA = {
             "value": 353.9645195007324,
             "unit": "ns",
             "range": "± 1.0614909896181952"
+          }
+        ]
+      }
+    ],
+    "Operations.CustomOperations (windows-latest  net9.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "22998716+KiKoS0@users.noreply.github.com",
+            "name": "Riadh",
+            "username": "KiKoS0"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "294e46b3b353251115bbbc824dda8ef6db878c96",
+          "message": "Fix ZCOUNT error when min bound is higher than set's max score (#1375)\n\nCo-authored-by: Tal Zaccai <talzacc@microsoft.com>",
+          "timestamp": "2025-09-09T22:02:08-07:00",
+          "tree_id": "acccb0ffddd1731ba00eea768ed530747161b875",
+          "url": "https://github.com/yuseok-kim-edushare/garnet/commit/294e46b3b353251115bbbc824dda8ef6db878c96"
+        },
+        "date": 1758022715811,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: ACL)",
+            "value": 29264.085286458332,
+            "unit": "ns",
+            "range": "± 67.60994518653611"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: ACL)",
+            "value": 152022.89475661056,
+            "unit": "ns",
+            "range": "± 260.62685434371014"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: ACL)",
+            "value": 101260.20085261419,
+            "unit": "ns",
+            "range": "± 132.12606336737232"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: ACL)",
+            "value": 78868.29151826746,
+            "unit": "ns",
+            "range": "± 1381.1371319605503"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: AOF)",
+            "value": 28056.20574951172,
+            "unit": "ns",
+            "range": "± 39.20133531892454"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: AOF)",
+            "value": 156907.00358072916,
+            "unit": "ns",
+            "range": "± 878.9694044821919"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: AOF)",
+            "value": 114163.44342912946,
+            "unit": "ns",
+            "range": "± 276.5272314232427"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: AOF)",
+            "value": 104979.20880998884,
+            "unit": "ns",
+            "range": "± 206.22322026642675"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: None)",
+            "value": 28433.296857561385,
+            "unit": "ns",
+            "range": "± 47.22644594778124"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: None)",
+            "value": 144360.7364908854,
+            "unit": "ns",
+            "range": "± 494.5136209346126"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: None)",
+            "value": 103172.2001139323,
+            "unit": "ns",
+            "range": "± 149.0847841369562"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: None)",
+            "value": 80753.8330078125,
+            "unit": "ns",
+            "range": "± 102.67175946780424"
           }
         ]
       }
