@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\storage\Tsavorite\cs\src\core\Tsavorite.core.csproj" />
+  </ItemGroup>
+
+</Project>
